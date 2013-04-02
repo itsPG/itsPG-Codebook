@@ -10,7 +10,7 @@
 */
 
 #include <iostream>
-#define NEXT_CHAR(q) ((char)('a' + (q - 'a')%3) )
+#define NEXT_CHAR(q) ((char)('a' + (q - 'a' + 1)%3) )
 using namespace std;
 
 char transfer(char tp, int times, char in) // type, repeat times, char_input
@@ -32,7 +32,7 @@ int main()
 	string q;
 	while (cin >> q)
 	{
-		char tp=q[0];
+		char tp = q[0];
 		int times = 1;
 		for (int i = 1; i < q.size(); i++)
 		{
