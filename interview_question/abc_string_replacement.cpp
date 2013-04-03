@@ -43,6 +43,7 @@ int main()
 			}
 			else times++;
 		}
-		cout << tp << endl;
+		for (int i = 0; i < times; i++) cout << tp;
+		cout << endl;
 	}
 }
